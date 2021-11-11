@@ -24,7 +24,7 @@ class App extends Component {
         let { latitude, longitude } = obj.iss_position;
         this.setState({ latISS: latitude, lngISS: longitude });
 
-        return fetch("https://api.freegeoip.app/json/?apikey=1e223cc0-4277-11ec-b006-850774abd385")
+        return fetch("https://api.freegeoip.app/json/?apikey=[ADD API KEY HERE]")
           .then(resp => resp.json())
           .then(obj => {
             let { latitude, longitude } = obj;
